@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Name: Jacques Favre
+    Date: Feb 20 2017
+    Class: CGS1821.051
+    Assignment: Week 6
+    Language: HTML 5
+    Purpose: Form exercise 4, styling ex3
+    Includes:
+    Favicon
+    CSS style sheet
+    formValid.css
+    sub_form.php
+
+     -->
+
+    <title>Basic Form</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="formValid4.css">
+
+</head>
+<body>
+        <header>
+            <h1>Basic Form</h1>
+        </header>
+        <main>
+        
+          <h1>Order Form</h1>
+
+                 <form action="sub_form.php" method="post">
+                      <div class="info">                   
+                        <fieldset>
+                            <legend>Contact information</legend>
+                                <label>First name</label><br>
+                                 <input type="text" name="Fname"><br>
+                                 <label>Last name</label><br>
+                                 <input type="text" name="Lname"><br>
+                                 <label>Email</label><br>
+                                 <input type="email" name="emailAddie"><br>
+                                 <label>Adress</label><br>
+                                <input type="text" name="mailAddie"><br>
+                                <label>City</label><br>
+                                <input type="text" name="City"><br>
+                                <label>State</label><br>
+                                 <input type="text" name="State"><br>
+                                <label>Zip</label><br>
+                                <input type="number" name="Zip" min=0 max=99999><br>
+                                <label>Phone</label><br>
+                                <input type="tel" name="phoneNum"><br>
+                            </fieldset>
+                        </div>
+                        <div class="order"> 
+                            <fieldset>
+                                <legend>Order information:</legend><br>
+                                    <label>Number of Samoflanges ordered</label><br><br>
+                                    Quantity (between 0 and 100):
+                                    <input type="number" name="quantity" min=0 max=100><br><br>
+                                    <label>Contat Me</label><br><br>
+                                    <input type="radio" name="by Email" value="byEmail"> By Email&nbsp;&nbsp;<br>
+                                    <input type="radio" name="by Phone" value="byPhone"> By Phone <br>
+                                    <input type="radio" name="by Email Or Phone" value="byEmailOrPhone"> Email or Phone <br>
+                                    <input type="radio" name="Do Not Contact Me" value="no"> Do Not Contact<br><br>
+                                    
+                                    
+                                <div class="button">
+                                    <input id="button" type="submit" value="SUBMIT"><br><br>
+                                </div>   
+                                    
+                                    <input id="reset" type="reset">
+
+                        </fieldset>
+                      </div>
+                </form>
+
+        </main>
+        <footer>
+            <p>&copy; 2017 <a href="mailto:jacques.favre@my.sfcollege.edu?&subject=Jacques%20Favre">Jacques Favre</a></p>
+        </footer>
+</body>
+</html>
+

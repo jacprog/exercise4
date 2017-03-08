@@ -1,0 +1,152 @@
+/*
+    Name: Jacques Favre
+    Date: Feb 20 2017
+    Class: CGS1821.051
+    Assignment: Week 6
+    Language: CSS 3
+    Purpose: Form exercise 4, styling ex3
+
+    Includes:
+    	colors:
+    		#800000 dark red header
+    		#ffffff white
+    		#cccccc light gray
+    		#cce6ff light blue
+    		#ffe5cc pale red complementary to the blue above
+    		#ccffe5 pale green
+    	*/
+/*This is a reset that reduces browser inconsistencies */
+html, body, header, h1{
+    padding: 0;
+    margin: 0;
+
+} /* sides light gray */
+html {
+	background-color: #cccccc;
+	}
+
+
+body {
+  	font-family: Verdana, Arial, Helvetica, Avenir, sans-serif;
+    font-size: 100%;
+  	width: 99%;
+	max-width: 960px;
+	margin: 0 auto; /* margin top and bottom 0, and automatic on side*/
+	background-color: #cce6ff;  /* to make all very light blue*/
+}
+
+header {
+    	background-color: #800000;
+}
+
+	header h1 {
+		font-size: 400%;
+		padding: .3em .75em;
+		color: white;
+	}
+
+/* the styles for the main area, 90% to have a margin on all small screens and all elements aligned
+	main {
+	clear: left;
+	width: 90%;
+
+	margin: 0 auto;
+
+}
+*/
+h1 {
+  text-align: center;
+  padding-top: 1em;
+}
+/*  wrapper and center me part of download to format php? */
+.wrapper {
+	margin-top:5%;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	background-color:#ffffff;
+	border-radius: 25px;
+	padding:15px;
+}
+.centerMe {
+	text-align: center;
+}
+
+/* format contact info form */
+.info {
+		background-color: #ffe5cc;
+		padding: .5em;
+		margin: 1em 5em;
+		border-radius: 25px;
+}
+/* format input text box radius */
+.info input, select {
+	border-radius: 5px;
+}
+/* 
+format order information area */
+.order {
+			background-color: #ccffe5;
+			padding: .5em;
+			margin: 1em 4.5em;
+			font-family: Avenir;
+			font-size: 110%;
+			border-radius: 25px;
+}
+/* radius # samoflanges */
+.order input, select {
+	border-radius: 50px;
+}
+/* submit button style */
+#button {
+	font-size: 110%;
+	background-color: #800000;
+	font-family: Verdana, Arial;
+	color: white;
+	padding: .25em .5em;
+}
+
+/* submit button position */
+.button {
+	text-align: center;
+}
+/* reset button style */
+#reset {
+	background-color: #ffe5cc;
+}
+
+/* size of input box contact info, max width 30%, min 100px */
+.info input, textarea, select {
+	width: 30%;
+	min-width: 100px;
+	margin: 0;
+	-webkit-box-sizing: border-box;  /* For legacy WebKit based browser */
+	-moz-box-sizing: border-box; /* For legacy Firefox browser */
+	box-sizing: border-box;
+} 
+
+/* radio button position */
+input[type=radio] {
+	width: 30px;
+	margin: 0;
+	-webkit-box-sizing: border-box;  /* For legacy WebKit based browser */
+	-moz-box-sizing: border-box; /* For legacy Firefox browser */
+	box-sizing: border-box;
+}
+
+/* footer styles */
+footer {
+    padding: .3em 0;
+    background-color: #800000;  /* to make footer dark red */
+	margin-top: 1em;
+	margin-bottom: 5px;
+	clear: right;
+}
+footer p {
+	  	text-align: center;
+		color: white;
+}
+footer p a {
+	    	text-decoration: none;
+	    	color: white;
+}
